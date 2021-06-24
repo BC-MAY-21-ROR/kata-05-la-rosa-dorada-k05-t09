@@ -1,9 +1,9 @@
 #!/usr/bin/ruby -w
 # frozen_string_literal: true
 
-require File.join(File.dirname(__FILE__), 'gilded_rose')
+require_relative '../ruby/gilded_rose'
 
-puts 'OMGHAI!'
+puts 'OMGHAI!  OOOOO XD'
 items = [
   Item.new(name = '+5 Dexterity Vest', sell_in = 10, quality = 20),
   Item.new(name = 'Aged Brie', sell_in = 2, quality = 0),
@@ -17,7 +17,7 @@ items = [
   Item.new(name = 'Conjured Mana Cake', sell_in = 3, quality = 6) # <-- :O
 ]
 # Conteo de días para la venta de producto
-days = 3
+days = 5
 days = ARGV[0].to_i + 1 if ARGV.size.positive?
 
 gilded_rose = GildedRose.new items
